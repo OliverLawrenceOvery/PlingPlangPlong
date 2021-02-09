@@ -14,6 +14,12 @@ Scenario: A number has a single factor out of 3, 5 and 7
 	| 10     | Plang |
 	| 7      | Plong |
 	| 14     | Plong |
+	| -3      | Pling |
+	| -6      | Pling |
+	| -5      | Plang |
+	| -10     | Plang |
+	| -7      | Plong |
+	| -14     | Plong |
 
 @mytag
 Scenario: A number has a two factors out of 3, 5 and 7
@@ -25,6 +31,10 @@ Scenario: A number has a two factors out of 3, 5 and 7
 	| 15      | PlingPlang |
 	| 21      | PlingPlong |
 	| 35      | PlangPlong |
+	| -15      | PlingPlang |
+	| -21      | PlingPlong |
+	| -35      | PlangPlong |
+
 
 
 @mytag
@@ -36,6 +46,8 @@ Scenario: A number has factors of 3, 5 and 7
 	| input1  | result     |
 	| 105      | PlingPlangPlong |
 	| 210      | PlingPlangPlong |
+	| -105      | PlingPlangPlong |
+	| -210      | PlingPlangPlong |
 
 
 @mytag

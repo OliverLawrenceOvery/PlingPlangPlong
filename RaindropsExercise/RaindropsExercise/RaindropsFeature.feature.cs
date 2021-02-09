@@ -83,6 +83,12 @@ namespace RaindropsExercise
         [NUnit.Framework.TestCaseAttribute("10", "Plang", null)]
         [NUnit.Framework.TestCaseAttribute("7", "Plong", null)]
         [NUnit.Framework.TestCaseAttribute("14", "Plong", null)]
+        [NUnit.Framework.TestCaseAttribute("-3", "Pling", null)]
+        [NUnit.Framework.TestCaseAttribute("-6", "Pling", null)]
+        [NUnit.Framework.TestCaseAttribute("-5", "Plang", null)]
+        [NUnit.Framework.TestCaseAttribute("-10", "Plang", null)]
+        [NUnit.Framework.TestCaseAttribute("-7", "Plong", null)]
+        [NUnit.Framework.TestCaseAttribute("-14", "Plong", null)]
         public virtual void ANumberHasASingleFactorOutOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -135,6 +141,9 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestCaseAttribute("15", "PlingPlang", null)]
         [NUnit.Framework.TestCaseAttribute("21", "PlingPlong", null)]
         [NUnit.Framework.TestCaseAttribute("35", "PlangPlong", null)]
+        [NUnit.Framework.TestCaseAttribute("-15", "PlingPlang", null)]
+        [NUnit.Framework.TestCaseAttribute("-21", "PlingPlong", null)]
+        [NUnit.Framework.TestCaseAttribute("-35", "PlangPlong", null)]
         public virtual void ANumberHasATwoFactorsOutOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -148,7 +157,7 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A number has a two factors out of 3, 5 and 7", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 19
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -168,13 +177,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 20
+#line 26
  testRunner.Given("I input a number which has two factors", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 21
+#line 27
  testRunner.When(string.Format("the factor finder method is called with {0}", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 22
+#line 28
  testRunner.Then(string.Format("the result is the appropriate string {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -186,6 +195,8 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.CategoryAttribute("mytag")]
         [NUnit.Framework.TestCaseAttribute("105", "PlingPlangPlong", null)]
         [NUnit.Framework.TestCaseAttribute("210", "PlingPlangPlong", null)]
+        [NUnit.Framework.TestCaseAttribute("-105", "PlingPlangPlong", null)]
+        [NUnit.Framework.TestCaseAttribute("-210", "PlingPlangPlong", null)]
         public virtual void ANumberHasFactorsOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -199,7 +210,7 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A number has factors of 3, 5 and 7", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 31
+#line 41
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -219,13 +230,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 32
+#line 42
  testRunner.Given("I input a number which has all three factors", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 33
+#line 43
  testRunner.When(string.Format("the factor finder method is called with {0}", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 34
+#line 44
  testRunner.Then(string.Format("the result is the appropriate string {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -249,7 +260,7 @@ this.ScenarioInitialize(scenarioInfo);
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("My input number is 0", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 42
+#line 54
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -269,13 +280,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 43
+#line 55
  testRunner.Given("I input zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 44
+#line 56
  testRunner.When(string.Format("the factor finder method is called with {0}", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 45
+#line 57
  testRunner.Then(string.Format("the result is the appropriate string {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

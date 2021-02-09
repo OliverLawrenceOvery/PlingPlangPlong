@@ -31,7 +31,6 @@ namespace RaindropsExercise
         }
 
 
-
         [Given(@"I input a number which has two factors")]
         public void GivenIInputANumberWhichHasTwoFactors()
         {
