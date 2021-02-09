@@ -49,7 +49,11 @@ namespace RaindropsExercise
            
         }
 
-
+        [Given(@"I input a number which has none of the three factors")]
+        public void GivenIInputANumberWhichHasNoneOfTheThreeFactors()
+        {
+            
+        }
 
     }
 }

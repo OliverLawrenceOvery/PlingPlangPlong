@@ -49,6 +49,20 @@ Scenario: A number has factors of 3, 5 and 7
 	| -105      | PlingPlangPlong |
 	| -210      | PlingPlangPlong |
 
+@TestingFactorFinderMethod
+Scenario: A number has no factors out of 3, 5 and 7
+	Given I input a number which has none of the three factors
+	When the factor finder method is called with <input1>
+	Then the result is the appropriate string <result>
+	Examples:
+	| input1  | result  |
+	| 1       | 1   |
+	| 13      | 13  |
+	| 34      | 34  |
+	| -1      | -1  |
+	| -13     | -13 |
+	| -34     | -34 |
+
 
 @TestingFactorFinderMethod
 Scenario: My input number is 0

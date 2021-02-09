@@ -76,7 +76,7 @@ namespace RaindropsExercise
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("A number has a single factor out of 3, 5 and 7")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("TestingFactorFinderMethod")]
         [NUnit.Framework.TestCaseAttribute("3", "Pling", null)]
         [NUnit.Framework.TestCaseAttribute("6", "Pling", null)]
         [NUnit.Framework.TestCaseAttribute("5", "Plang", null)]
@@ -92,7 +92,7 @@ namespace RaindropsExercise
         public virtual void ANumberHasASingleFactorOutOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "TestingFactorFinderMethod"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -137,7 +137,7 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("A number has a two factors out of 3, 5 and 7")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("TestingFactorFinderMethod")]
         [NUnit.Framework.TestCaseAttribute("15", "PlingPlang", null)]
         [NUnit.Framework.TestCaseAttribute("21", "PlingPlong", null)]
         [NUnit.Framework.TestCaseAttribute("35", "PlangPlong", null)]
@@ -147,7 +147,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void ANumberHasATwoFactorsOutOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "TestingFactorFinderMethod"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -192,7 +192,7 @@ this.ScenarioInitialize(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("A number has factors of 3, 5 and 7")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
+        [NUnit.Framework.CategoryAttribute("TestingFactorFinderMethod")]
         [NUnit.Framework.TestCaseAttribute("105", "PlingPlangPlong", null)]
         [NUnit.Framework.TestCaseAttribute("210", "PlingPlangPlong", null)]
         [NUnit.Framework.TestCaseAttribute("-105", "PlingPlangPlong", null)]
@@ -200,7 +200,7 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void ANumberHasFactorsOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "TestingFactorFinderMethod"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -244,13 +244,18 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("My input number is 0")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("0", "PlingPlangPlong", null)]
-        public virtual void MyInputNumberIs0(string input1, string result, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("A number has no factors out of 3, 5 and 7")]
+        [NUnit.Framework.CategoryAttribute("TestingFactorFinderMethod")]
+        [NUnit.Framework.TestCaseAttribute("1", "1", null)]
+        [NUnit.Framework.TestCaseAttribute("13", "13", null)]
+        [NUnit.Framework.TestCaseAttribute("34", "34", null)]
+        [NUnit.Framework.TestCaseAttribute("-1", "-1", null)]
+        [NUnit.Framework.TestCaseAttribute("-13", "-13", null)]
+        [NUnit.Framework.TestCaseAttribute("-34", "-34", null)]
+        public virtual void ANumberHasNoFactorsOutOf35And7(string input1, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "mytag"};
+                    "TestingFactorFinderMethod"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -259,8 +264,8 @@ this.ScenarioInitialize(scenarioInfo);
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("input1", input1);
             argumentsOfScenario.Add("result", result);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("My input number is 0", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 54
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("A number has no factors out of 3, 5 and 7", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 53
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -280,13 +285,63 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 55
- testRunner.Given("I input zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 54
+ testRunner.Given("I input a number which has none of the three factors", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 56
+#line 55
  testRunner.When(string.Format("the factor finder method is called with {0}", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 57
+#line 56
+ testRunner.Then(string.Format("the result is the appropriate string {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("My input number is 0")]
+        [NUnit.Framework.CategoryAttribute("TestingFactorFinderMethod")]
+        [NUnit.Framework.TestCaseAttribute("0", "PlingPlangPlong", null)]
+        public virtual void MyInputNumberIs0(string input1, string result, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "TestingFactorFinderMethod"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("input1", input1);
+            argumentsOfScenario.Add("result", result);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("My input number is 0", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 68
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 69
+ testRunner.Given("I input zero", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 70
+ testRunner.When(string.Format("the factor finder method is called with {0}", input1), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 71
  testRunner.Then(string.Format("the result is the appropriate string {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
