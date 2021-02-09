@@ -18,6 +18,30 @@ namespace RaindropsExercise
            
         }
 
+        [Given(@"I input a number which has two factors")]
+        public void GivenIInputANumberWhichHasTwoFactors()
+        {
+
+        }
+
+        [Given(@"I input a number which has all three factors")]
+        public void GivenIInputANumberWhichHasAllThreeFactors()
+        {
+
+        }
+
+        [Given(@"I input zero")]
+        public void GivenIInputZero()
+        {
+
+        }
+
+        [Given(@"I input a number which has none of the three factors")]
+        public void GivenIInputANumberWhichHasNoneOfTheThreeFactors()
+        {
+
+        }
+
         [When(@"the factor finder method is called with (.*)")]
         public void WhenTheFactorFinderMethodIsCalledWith(int n)
         {
@@ -29,31 +53,5 @@ namespace RaindropsExercise
         {
             Assert.That(result, Is.EqualTo(expected));
         }
-
-
-        [Given(@"I input a number which has two factors")]
-        public void GivenIInputANumberWhichHasTwoFactors()
-        {
-            
-        }
-
-        [Given(@"I input a number which has all three factors")]
-        public void GivenIInputANumberWhichHasAllThreeFactors()
-        {
-          
-        }
-
-        [Given(@"I input zero")]
-        public void GivenIInputZero()
-        {
-           
-        }
-
-        [Given(@"I input a number which has none of the three factors")]
-        public void GivenIInputANumberWhichHasNoneOfTheThreeFactors()
-        {
-            
-        }
-
     }
 }
