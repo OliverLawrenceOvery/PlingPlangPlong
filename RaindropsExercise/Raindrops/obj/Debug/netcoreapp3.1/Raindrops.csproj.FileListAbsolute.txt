@@ -16,3 +16,4 @@ C:\Users\olawr\OneDrive\Engineering73\AdvancedTesting\RaindropsExercise\PlingPla
 C:\Users\olawr\OneDrive\Engineering73\AdvancedTesting\RaindropsExercise\PlingPlangPlong\RaindropsExercise\Raindrops\obj\Debug\netcoreapp3.1\Raindrops.csproj.CoreCompileInputs.cache
 C:\Users\olawr\OneDrive\Engineering73\AdvancedTesting\RaindropsExercise\PlingPlangPlong\RaindropsExercise\Raindrops\obj\Debug\netcoreapp3.1\Raindrops.dll
 C:\Users\olawr\OneDrive\Engineering73\AdvancedTesting\RaindropsExercise\PlingPlangPlong\RaindropsExercise\Raindrops\obj\Debug\netcoreapp3.1\Raindrops.pdb
+C:\Users\olawr\OneDrive\Engineering73\AdvancedTesting\RaindropsExercise\PlingPlangPlong\RaindropsExercise\Raindrops\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
