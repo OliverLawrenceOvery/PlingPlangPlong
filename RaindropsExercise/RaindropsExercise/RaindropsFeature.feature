@@ -1,7 +1,7 @@
 ﻿Feature: RaindropsFeature
 	Utility for giving a certain concatenated output given if the input has factors of 3, 5 and/or 7
 
-@mytag
+@TestingFactorFinderMethod
 Scenario: A number has a single factor out of 3, 5 and 7
 	Given I input a number which has a single factor
 	When the factor finder method is called with <input1>
@@ -21,7 +21,7 @@ Scenario: A number has a single factor out of 3, 5 and 7
 	| -7      | Plong |
 	| -14     | Plong |
 
-@mytag
+@TestingFactorFinderMethod
 Scenario: A number has a two factors out of 3, 5 and 7
 	Given I input a number which has two factors
 	When the factor finder method is called with <input1>
@@ -37,7 +37,7 @@ Scenario: A number has a two factors out of 3, 5 and 7
 
 
 
-@mytag
+@TestingFactorFinderMethod
 Scenario: A number has factors of 3, 5 and 7
 	Given I input a number which has all three factors
 	When the factor finder method is called with <input1>
@@ -50,7 +50,7 @@ Scenario: A number has factors of 3, 5 and 7
 	| -210      | PlingPlangPlong |
 
 
-@mytag
+@TestingFactorFinderMethod
 Scenario: My input number is 0
 	Given I input zero
 	When the factor finder method is called with <input1>
